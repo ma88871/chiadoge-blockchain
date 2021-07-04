@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from chia.types.blockchain_format.sized_bytes import bytes32
+from chiadoge.types.blockchain_format.sized_bytes import bytes32
 from chiadoge.util.ints import uint8, uint64
 from chiadoge.util.streamable import Streamable, streamable
 
