@@ -4,6 +4,6 @@
 
 Prefarm: 21000000 (Development and Promotion Fund)
 
-Block Reward: 2 * 50 = 100
+Block Reward: 100
 
 For more information, see our website and downloads at https://chiadoge.co.
