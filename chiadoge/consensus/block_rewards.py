@@ -15,17 +15,17 @@ def calculate_pool_reward(height: uint32) -> uint64:
     """
 
     if height == 0:
-        return uint64(int((7 / 8) * 21000000 * 100 * _mojo_per_chiadoge))
+        return uint64(int((7 / 8) * 21000000 * 10 * _mojo_per_chiadoge))
     elif height < 3 * _blocks_per_year:
-        return uint64(int((7 / 8) * 2 * 500 * _mojo_per_chiadoge))
+        return uint64(int((7 / 8) * 2 * 50 * _mojo_per_chiadoge))
     elif height < 6 * _blocks_per_year:
-        return uint64(int((7 / 8) * 1 * 500 * _mojo_per_chiadoge))
+        return uint64(int((7 / 8) * 1 * 50 * _mojo_per_chiadoge))
     elif height < 9 * _blocks_per_year:
-        return uint64(int((7 / 8) * 0.5 * 500 * _mojo_per_chiadoge))
+        return uint64(int((7 / 8) * 0.5 * 50 * _mojo_per_chiadoge))
     elif height < 12 * _blocks_per_year:
-        return uint64(int((7 / 8) * 0.25 * 500 * _mojo_per_chiadoge))
+        return uint64(int((7 / 8) * 0.25 * 50 * _mojo_per_chiadoge))
     else:
-        return uint64(int((7 / 8) * 0.125 * 500 * _mojo_per_chiadoge))
+        return uint64(int((7 / 8) * 0.125 * 50 * _mojo_per_chiadoge))
 
 
 def calculate_base_farmer_reward(height: uint32) -> uint64:
@@ -38,14 +38,14 @@ def calculate_base_farmer_reward(height: uint32) -> uint64:
     rates increase continuously.
     """
     if height == 0:
-        return uint64(int((1 / 8) * 21000000 * 100 * _mojo_per_chiadoge))
+        return uint64(int((1 / 8) * 21000000 * 10 * _mojo_per_chiadoge))
     elif height < 3 * _blocks_per_year:
-        return uint64(int((1 / 8) * 2 * 500 * _mojo_per_chiadoge))
+        return uint64(int((1 / 8) * 2 * 50 * _mojo_per_chiadoge))
     elif height < 6 * _blocks_per_year:
-        return uint64(int((1 / 8) * 1 * 500 * _mojo_per_chiadoge))
+        return uint64(int((1 / 8) * 1 * 50 * _mojo_per_chiadoge))
     elif height < 9 * _blocks_per_year:
-        return uint64(int((1 / 8) * 0.5 * 500 * _mojo_per_chiadoge))
+        return uint64(int((1 / 8) * 0.5 * 50 * _mojo_per_chiadoge))
     elif height < 12 * _blocks_per_year:
-        return uint64(int((1 / 8) * 0.25 * 500 * _mojo_per_chiadoge))
+        return uint64(int((1 / 8) * 0.25 * 50 * _mojo_per_chiadoge))
     else:
-        return uint64(int((1 / 8) * 0.125 * 500 * _mojo_per_chiadoge))
+        return uint64(int((1 / 8) * 0.125 * 50 * _mojo_per_chiadoge))
